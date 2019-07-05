@@ -122,14 +122,15 @@ class MainActivity : AppCompatActivity(), LocationListener {
 
     override fun onLocationChanged(location: Location) {
         // Latitude
-        val textView1 = findViewById<TextView>(R.id.text_view1)
-        val str1 = "緯度:" + location.getLatitude()
-        textView1.text = str1
+        val textTest1 = findViewById<TextView>(R.id.textView1)
+        val s1 = "緯度:" + location.getLatitude()
+        textTest1.text = s1
 
         // Longitude
-        val textView2 = findViewById<TextView>(R.id.text_view2)
-        val str2 = "経度:" + location.getLongitude()
-        textView2.text = str2
+        val textTest2 = findViewById<TextView>(R.id.textView2)
+        val s2 = "経度:" + location.getLongitude()
+        textTest2.text = s2
+
     }
 
     override fun onProviderEnabled(provider: String) {
